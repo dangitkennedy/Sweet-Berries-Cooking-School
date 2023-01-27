@@ -1,0 +1,175 @@
+:root {
+    --background: #F5F3EF;
+    --card: #FFFFFF;
+    --accent: #FEBD2F;
+    --text-primary: #000000;
+    --text-secondary: #646464;
+    --outline: #DCDCDC;
+    --fw-bold: 700;
+    --fw-med: 500;
+    --fw-regular: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px black solid */
+}
+
+body {
+    background-color: var(--background);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+p,
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-weight: var(--fw-med);
+    font-size: 64px;
+}
+
+h2 {
+    font-weight: var(--fw-med);
+    font-size: 40px;
+}
+
+h3 {
+    font-weight: var(--fw-bold);
+    font-size: 24px;
+}
+
+p {
+    font-weight: var(--fw-regular);
+    font-size: 24px;
+    color: var(--text-secondary);
+}
+
+a {
+    font-weight: var(--fw-med);
+    color: var(--text-primary);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.grid-container {
+    /* display: grid; */
+    width: 97%;
+    margin: auto;
+}
+
+/* HEADER */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.fa-solid, fa-bars {
+    display: none;
+}
+
+nav a:first-of-type {
+    margin-right: -30%;
+}
+
+#create-account {
+    background-color: var(--text-primary);
+    padding: 16px 24px;
+    border-radius: 28px;
+    color: var(--card);
+}
+
+/* BANNER */
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-section {
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-section h1 {
+    padding-bottom: 32px;
+}
+
+.about-section p {
+    line-height: 32px;
+}
+
+.about-section-img img {
+    width: 100%;
+}
+
+/* CARDS */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 80px;
+    padding: 120px 40px;
+}
+
+.card {
+    width: 100%;
+    background: var(--card);
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.card:first-of-type {
+    background-color: var(--accent);
+    padding: 40px 40px 90px 40px;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.card a {
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: 1px solid var(--outline);
+}
+
+.icon {
+    position: absolute;
+    right: 25px;
+    top: -40px;
+}
+
+/* FOOTER */
+
+footer {
+    height: 80px;
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MEDAIA QUERIES */
