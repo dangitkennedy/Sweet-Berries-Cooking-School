@@ -60,7 +60,7 @@ a {
     text-decoration: none;
 }
 
-.grid-container {
+.container {
     /* display: grid; */
     width: 97%;
     margin: auto;
