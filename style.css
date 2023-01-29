@@ -61,8 +61,7 @@ a {
 }
 
 .container {
-    /* display: grid; */
-    width: 97%;
+    padding: 40px;
     margin: auto;
 }
 
@@ -137,6 +136,7 @@ nav a:first-of-type {
     flex-direction: column;
     justify-content: space-around;
     padding: 40px;
+    min-height: 318px;
 }
 
 .card:first-of-type {
@@ -173,3 +173,155 @@ footer {
 }
 
 /* MEDAIA QUERIES */
+
+/* LAPTOPS */
+@media screen and (max-width: 1148px) {
+    nav a:first-of-type {
+        margin-right: -25%;
+    }
+}
+
+@media screen and (max-width: 928px) {
+    nav a:first-of-type {
+        margin-right: -20%;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px 0 24px 0;
+    }
+
+    nav a:first-of-type {
+        margin-right: -15%;
+    }
+
+    .banner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section {
+        grid-column: span 2;
+        margin-bottom: 60px;
+        text-align: center;
+        padding: 0 80px;
+    }
+
+    .about-section-img {
+        grid-column: span 2;
+    }
+
+    .about-section-img img {
+        height: 360px;
+        object-fit: cover;
+        border-radius: 32px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 56px;
+        padding: 80px 0;
+    }
+
+    .card:first-of-type {
+        padding: 32px 32px 123px 32px;
+    }
+}
+
+@media screen and (max-width: 708px) {
+    nav a:first-of-type {
+        margin-right: -10%;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    nav a:first-of-type {
+        margin-right: -5%;
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 560px) {
+    nav a {
+        display: none;
+    }
+
+    .fa-solid, fa-bars {
+        display: inline-block;
+    }
+
+    nav img {
+        margin-left: 34%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+    nav img {
+        margin-left: 26%;
+    }
+
+    .about-section {
+        padding: 0;
+    }
+
+    .about-section-img img {
+        height: auto;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 40px 0 60px 0;
+    }
+
+    .card:first-of-type {
+        min-height: 132px;
+        padding: 24px 50px 24px 24px;
+        border-radius: 24px;
+    }
+
+    .card {
+        padding: 24px;
+        min-height: 247px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav img {
+        margin-left: 15%;
+    }
+}
