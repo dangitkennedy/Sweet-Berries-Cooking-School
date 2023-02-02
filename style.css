@@ -60,6 +60,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 .container {
     padding: 40px;
     margin: auto;
@@ -67,16 +71,16 @@ a {
 
 /* HEADER */
 
+header {
+    position: relative;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 100px;
-}
-
-.fa-solid, fa-bars {
-    display: none;
 }
 
 nav a:first-of-type {
@@ -265,10 +269,6 @@ footer {
 @media screen and (max-width: 560px) {
     nav a {
         display: none;
-    }
-
-    .fa-solid, fa-bars {
-        display: inline-block;
     }
 
     nav img {
